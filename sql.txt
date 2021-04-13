@@ -1,0 +1,198 @@
+SQL : 
+Data -->
+DataBase -->
+RDBMS --->
+DT----------------------------
+		integer-	BigINT,smallInt,int , tiny int -->127 to -128
+		String - 	Character -->size[255]
+		integer+String->	Address-->VarChar size[255]
+		integer+String->	text -->n number of lines 
+		folating------->	float,double,decimal
+		boolean-------->	true , false
+		
+		Date ----------->  date,datetime,time,timestamp
+---------------------------------
+Opeartions
+		Airthmatic 
+		comparative /relatives ope
+		logical--And -(both) OR--(one) NOT ()
+		AND -----both side will be true--0
+		OR ------One side will be true --1
+		
+SCHEMAS ---it is collection of DATABASE 
+	Database --
+	logical structure   ---tables ,database
+	phyical structure   ---size , memory 
+	
+	
+	keywords
+	
+	fasle---0
+	true---1
+	
+	declarative ---how to do not saying what to do 
+	
+	Types of commands 
+		create ---database ,tables
+		database
+		syntax : - create database databaseName;
+tables	
+		create table tablename(
+		//query
+		
+		);
+		
+		
+		example: create database customer;
+		
+		create table customer_Details(
+		customer_ID int ,//int size defaultt 11
+		customer_name varchar(15)//name should be less than 15 character
+		customer_number bigint,
+		customer_Address varchar(200)
+	);
+	select * from customer_details;//tables view 
+	desc customer_details;//table description
+	show columns from customer_order;//columns
+	constraint //not null 
+				keywords/rule to write 
+	unique----id should be 
+	
+	check ----restrict the timings 
+			condition, check age >18	
+	
+	primary key-- combination of is not null and unique
+	
+	foreign key --parent to child (any properties u can make it as primary key)
+	
+	alter--->it is change the structure of the table 
+	
+	modify---
+	alter table customer_transaction modify transaction_status boolean  default false;
+	
+	add----
+	alter table customer_transaction add transaction_Addresee varchAR(20)  not null;
+	
+	drop-----
+	alter table customer_transaction drop transaction_Addreses;
+	desc---
+	desc customer_transaction;
+	
+11/04/2021
+Administartive commonds
+		show databases  it wil show the all database name 
+		show tables
+DDL -- data defination language -----create ,alter,drop,
+DML -- data manipulation language ---insert, 
+
+reaname table 
+		alter table product rename to product_Details;
+rename column name 		
+		alter table product_details rename column product_price to productPRice;
+truncate		
+			
+			
+			
+			
+
+
+
+
+	
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
