@@ -10,8 +10,8 @@ DESC AMAZON.product_details;
 insert INTO amazon.product_details (P_ID , P_NAME,P_PRICE) VALUES (1,'MOBILE',15000.0);
 insert INTO amazon.product_details (P_ID , P_NAME,P_PRICE) VALUES (2,'MOBILE MI ',20000.0);
 insert INTO amazon.product_details (P_ID , P_NAME,P_PRICE) VALUES (5,'MOBILE MI ',6000.0);
-insert INTO amazon.product_details (P_ID , P_NAME,P_PRICE) VALUES (6,'MOBILE MI ',8000.0);
-insert INTO amazon.product_details (P_ID , P_NAME,P_PRICE) VALUES (7,'MOBILE MI ',8000.0);
+insert INTO amazon.product_details (P_ID , P_NAME,P_PRICE) VALUES (8,'MOBILE MI ',8000.0);
+insert INTO amazon.product_details (P_ID , P_NAME,P_PRICE) VALUES (9,'MOBILE MI ',8000.0);
 insert INTO amazon.product_details (P_ID , P_NAME,P_PRICE) VALUES (3,'MOBILE REALME',1000.0);
 insert INTO amazon.product_details (P_ID , P_NAME,P_PRICE) VALUES (4,'MOBILE SAM ' ,25000.0);
 --  group
@@ -34,6 +34,11 @@ select * from amazon.product_details where P_PRICE between
 (select min(P_PRICE)from amazon.product_details ) and (select max(P_PRICE) from amazon.product_details);
 select * from amazon.product_details where P_PRICE=(select max(P_PRICE) from amazon.product_details) 
 and P_PRICE =(select min(P_PRICE) from amazon.product_details);
+
+select max(P_PRICE) from amazon.product_details 
+group by P_PRICE ;
+
+
 
 
 

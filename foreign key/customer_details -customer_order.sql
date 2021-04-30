@@ -12,3 +12,8 @@ insert into customer_order values (5,'IronBox',1050,4);
 select c.CUSTOMER_ID,c.CUSTOMER_Name,c.CUSTOMER_Address, o.customer_order_ID, o.customer_order_Name from 
 customer_details c inner join customer_order o on c.CUSTOMER_ID=o.customer_order_ID;
 
+ -- two types using opeartor <   and not in 
+select max(customer_order_Price)from customer.customer_order where 
+customer_order_Price not in (select max(customer_order_Price) from customer.customer_order) ;
+
+
